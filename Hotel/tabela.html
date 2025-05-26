@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" style="background-color: #ff0015e8;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="Logo Hotel" width="120" height="96">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h3 class="text-center">Reservas</h3>
+        <table class="table table-bordered table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Data Entrada</th>
+                    <th>Data Saida</th>
+                    <th>Adultos</th>
+                    <th>Crianças</th>
+                    <th>Observações</th>
+                </tr>
+            </thead>
+            <tbody id="TabelaReservas">
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("http://localhost:3000/reserva")
+                .then(response => response.json())
+                .then(data => {
+                    const tabela = document.getElementById("TabelaReservas");
+                    data.forEach(reserva => {
+                        const row = `<tr>
+                            <td>${reserva.nome}</td>
+                            <td>${reserva.email}</td>
+                            <td>${reserva.dataEn}</td>
+                            <td>${reserva.dataSai}</td>
+                            <td>${reserva.adulto}</td>
+                            <td>${reserva.crianca}</td>
+                            <td>${reserva.observacoes}</td>
+                        </tr>`;
+                        tabela.innerHTML += row;
+                    });
+                })
+                .catch(error => console.error("Erro ao carregar reservas:", error));
+        });
+    </script>
+</body>
+</html>

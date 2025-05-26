@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: #ff0015e8;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="Logo Hotel" width="120" height="96">
+            </a>
+        </div>
+    </nav>
+
+
+
+
+    <main>
+        <br><br><br>
+        <div class="container">
+
+
+            <div class="row">
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sinta o conforto acolhedor de nossas hospedagens</h5>
+                            <p class="card-text">Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+                            <a href="#" class="btn btn-primary">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3">
+                        <img src="./img/room1.jpg" class="rounded float-end" alt="quarto de um hotel" width="800"
+                            height="">
+                        <div class="card-img-overlay">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <center>
+            <br><br>
+            <h2>POR QUE SE HOSPEDAR EM NOSSOS HÓTEIS?</h2>
+            <br><br>
+        </center>
+
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="./img/cafe.png" width="60" height="60">
+                    <h3>Delicioso café da manhã</h3>
+                    <p class="h5">Incluso em todas as manhãs</p>
+                </div>
+
+                <div class="col">
+                    <img src="./img/loc.png" width="60" height="60">
+                    <h3>Fácil acesso</h3>
+                    <p class="h5">Perto dos principais pontos turísticos</p>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br><br><br>
+
+
+    </main>
+
+    <cartoes>
+
+        <center>
+            <h2>Nossos Quartos</h2>
+        </center>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="./img/suite-sol.jpg" class="card-img-top" alt="Suite de solteiro" width="300" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Suite de solteiro</h5>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="./img/suite-casal.jpg" class="card-img-top" alt="Suite de casal" width="300" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Suite de casal</h5>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <img src="./img/suite-master.jpg" class="card-img-top" alt="Suite Master" width="300" height="400">
+                <div class="card-body">
+                    <h5 class="card-title">Suite Master</h5>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br><br><br><br>
+
+    </cartoes>
+
+
+
+
+
+    <footer style="background-color: #ff0015e8;">
+
+
+        <div class="container text-light text-right">
+            <br>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <p class="h2 mb-3">FAÇA SUA RESERVA</p>
+                    <p class="h5 mb-3">Entre em contato conosco informando as datas desejadas.Lhe retornaremos
+                        informando a disponibilidade e repassando detalhes da reserva.</p>
+                    <br>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="mb-3">
+
+                        <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="exampleFormControlInput1" class="form-label">Data de entrada:</label>
+                        <input type="date" class="form-control" id="dataEn">
+
+                    </div>
+
+
+
+                    <div class="mb-3">
+
+                        <label for="exampleFormControlTextarea1" class="form-label">Observações:</label>
+                        <textarea class="form-control" id="observacoes" rows="3"></textarea>
+
+                    </div>
+                    <br>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="mb-3">
+
+                        <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email"
+                            placeholder="name@exemplo.com">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="exampleFormControlInput1" class="form-label">Data de Saída:</label>
+                        <input type="date" class="form-control" id="dataSai">
+
+                    </div>
+
+
+
+                    <div class="mb-3">
+
+                        <label for="exampleFormControlInput1" class="form-label">Adultos:</label>
+                        <input type="number" class="form-control" id="adulto">
+
+                        <label for="exampleFormControlInput1" class="form-label">Crianças:</label>
+                        <input type="number" class="form-control" id="crianca">
+                        <br>
+
+                        <button type="submit" class="btn btn-success">Enviar</button>
+
+
+
+                    </div>
+
+                    
+                    <br>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector("form").addEventListener("submit", function(event) {
+                event.preventDefault();
+        
+               
+                const nome = document.getElementById("nome").value;
+                const email = document.getElementById("email").value;
+                const dataEN = document.getElementById("dataEN").value;
+                const dataSai = document.getElementById("dataSai").value;
+                const adulto = document.getElementById("adulto").value;
+                const crianca = document.getElementById("crianca").value;
+                const observacoes = document.getElementById("observacoes").value;
+        
+                const reserva = {
+                    nome,
+                    email,
+                    dataEN,
+                    dataSai,
+                    adulto,
+                    crianca,
+                    observacoes
+                };
+        
+                fetch("http://localhost:3000/reservas", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(reserva)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert("Reserva feita com sucesso!");
+                    document.querySelector("form").reset();
+                })
+                .catch(error => {
+                    alert("Erro ao fazer reserva.");
+                    console.error("Erro:", error);
+                });
+            });
+        });
+        </script>
+
+
+
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
