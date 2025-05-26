@@ -1,0 +1,19 @@
+APRESENTAÇÃO DO SOFTWARE
+
+Um Hotel Precisa desenvolver um sistema web onde seus clientes e publico alvo consigam visualizar os quartos disponíveis e fazer sua reserva
+
+DESCRIÇÃO DO PROJETO
+
+A função do software será 
+- Exibir os quartos disponíveis;
+- Fazer o cadastro do cliente;
+- Realizar a reserva do quarto;
+- Armazenar os dados.
+
+PLANOS DE TESTE
+
+- Verificar se os quartos estão sendo exibidos corretamente;
+- Verificar se as informações dos clientes estão sendo cadastradas corretamente;
+- Verificar se os dados da reserva estão sendo armazenados corretamente;
+- Verificar se os dados estão sendo preenchidos corretamente na tabela.
+
