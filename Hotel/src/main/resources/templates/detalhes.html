@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link th:href="@{/css/}+${css}+'.css'" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+     <center>
+         <a href="/">Página Inicial</a>
+         <a href="/cliente/cadastro">Cadastrar novo cliente</a>
+         <a href="/cliente/lista">Exibir todos os cliente cadastrados</a>
+         
+         <h1>Detalhes do cliente</h1>
+         
+         
+     </center>
+    
+    <p>ID: <span th:text="${cliente.id}"></p>
+    <p>Cliente: <span th:text="${cliente.cliente}"></p>
+    <p>Email: <span th:text="${cliente.email}"></p>
+    <p>cpf: <span th:text="${cliente.cpf}"></p>
+    
+    <h2>Análises</h2>
+    <form  th:action="@{'/analise/gravar/' + ${cliente.id}}" method="post">
+        <p>
+        <label>Nova análise:</label>
+        <input type="text" id="texto" name="texto" required>
+        </p>
+        <p>
+        <label>Nota:</label>
+        <input type="number" id="nota" name="nota" required>
+        </p>
+        <button type="submit">Adicionar</button>
+    </form>
+    
+    <ul>
+        <li th:each="analise : ${analises}">
+            Análise: <span th:text="${analise.texto}"></span><br>
+            Nota: <span th:text="${analise.nota}"></span><br>
+            
+        </li>
+    </ul>
+    
+    
+    
+    </body>
+</html>

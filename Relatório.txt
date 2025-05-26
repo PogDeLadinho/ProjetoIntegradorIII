@@ -12,8 +12,8 @@ A função do software será
 
 PLANOS DE TESTE
 
-- Verificar se os quartos estão sendo exibidos corretamente;
-- Verificar se as informações dos clientes estão sendo cadastradas corretamente;
-- Verificar se os dados da reserva estão sendo armazenados corretamente;
-- Verificar se os dados estão sendo preenchidos corretamente na tabela.
+- Verificar se os quartos estão sendo exibidos corretamente; ( verificado e corrigido )
+- Verificar se as informações dos clientes estão sendo cadastradas corretamente; ( verificado e corrigido )
+- Verificar se os dados da reserva estão sendo armazenados corretamente; ( verificado e corrigido )
+- Verificar se os dados estão sendo preenchidos corretamente na tabela. ( verificado e corrigido )
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hotel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link th:href="@{/css/}+${css}+'.css'" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+     <center>
+         <a href="/">Página Inicial</a>
+         <a href="/cliente/cadastro">Cadastrar novo clientee</a>
+         <a href="/cliente/lista">Exibir todos os clientes cadastrados</a>
+         
+         <h1>Cadastro de cliente</h1>
+     </center>
+        
+        
+        <form method="post" th:action="@{/cliente/gravar}">
+            <P>ID: <input type="hidden" th:field="${cliente.id}"></P>
+            <p>cliente: <input type="text" th:field="${cliente.cliente}"> </p>
+            <p>Email: <input type="text" th:field="${cliente.email}"> </p>
+            <p>cpf: <input type="number" th:field="${cliente.cpf}"> </p>
+            
+            <button type="submit">Salvar</button>
+        </form>    
+            
+    </body>
+</html>
